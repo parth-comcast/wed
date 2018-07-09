@@ -1,0 +1,114 @@
+// This file includes all mixins  of the websites
+
+@mixin font($name) {
+    $font-family: (
+        cursive_white: ('Alex Brush', cursive),
+        cursive1_black: ('Alex Brush', cursive),
+        cursive_tomato: ('Alex Brush', cursive),
+
+        philosopher1_white: ('Philosopher', sans-serif),
+        philosopher2_white: ('Philosopher', sans-serif),
+        philosopher3_white: ('Philosopher', sans-serif),
+
+        philosopher1_black: ('Philosopher', sans-serif),
+        philosopher2_black: ('Philosopher', sans-serif),
+        philosopher3_black: ('Philosopher', sans-serif),
+
+        body1_grey: ('Philosopher'),
+        body2_grey: ('Open Sans', sans-serif),
+
+        body1_white: ('Open Sans', sans-serif),
+
+        dispaly1_white_mobile: ('Open Sans', sans-serif),
+        display1_white: ('Open Sans', sans-serif),
+
+        display2_grey: ('Open Sans', sans-serif),
+        display3_grey: ('Open Sans', sans-serif),
+        display4_grey: ('Open Sans', sans-serif)
+    );
+
+    $font-size: (
+        cursive_white: 3.5rem,
+        cursive1_black: 3.5rem,
+        cursive_tomato: 2rem,
+
+        philosopher1_white: 36px,
+        philosopher2_white: 46px,
+        philosopher3_white: 3rem,
+
+        philosopher1_black: 1.5rem,
+        philosopher2_black: 2.5rem,
+        philosopher3_black: 3rem,
+
+        body1_grey: 1rem,
+        body2_grey: 1rem,
+
+        body1_white: 1rem,
+
+        dispaly1_white_mobile: 2rem,
+        display1_white: 2.25rem,
+
+        display2_grey: 2rem,
+        display3_grey: 1.5rem,
+        display4_grey: 1rem
+    );
+
+    $font-weight: (
+        cursive_white: 400,
+        cursive1_black: 400,
+        cursive_tomato: 400,
+
+        philosopher1_white: 400,
+        philosopher2_white: 400,
+        philosopher3_white: 400,
+
+        philosopher1_black: 400,
+        philosopher2_black: 400,
+        philosopher3_black: 400,
+
+        body1_grey: 400,
+        body2_grey: 600,
+
+        body1_white: 400,
+
+        dispaly1_white_mobile: normal,
+        display1_white: normal,
+
+        display2_grey: 525,
+        display3_grey: normal,
+        display4_grey: 525
+    );
+
+    $color: (
+        cursive_white: $white,
+        cursive1_black: $black,
+        cursive_tomato: $tomato,
+
+        philosopher1_white: $white,
+        philosopher2_white: $white,
+        philosopher3_white: $white,
+
+        philosopher1_black: $black,
+        philosopher2_black: $black,
+        philosopher3_black: $black,
+        
+        body1_grey: $grey-1,
+        body2_grey: $grey-1,
+
+        body1_white: $white,
+
+        dispaly1_white_mobile: $white,
+        display1_white: $white,
+
+        display2_grey: $grey-1,
+        display3_grey: $grey-9,
+        display4_grey: $grey-9
+
+    );
+
+    font-family: map-get($font-family, $name);
+    font-size: map-get($font-size, $name);
+    font-weight: map-get($font-weight, $name);
+    color: map-get($color, $name);
+
+}

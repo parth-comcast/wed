@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { SharedModule } from './shared/module';
 
 import { LandingComponent } from './landing/landing';
-import { SliderComponent } from './slider/slider';
+import { HeaderComponent } from './header/header';
 
 @NgModule({
   declarations: [
     LandingComponent,
-    SliderComponent
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [LandingComponent]

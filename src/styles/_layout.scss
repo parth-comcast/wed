@@ -1,0 +1,46 @@
+$susy: (
+    columns: 12,
+    gutters: 0,
+    math: fluid,
+    output: float,
+    gutter-position: inside,
+    global-box-sizing: border-box
+);
+
+@function step($multiplier) {
+    @return $multiplier * $global-step-size;
+}
+
+@function vr($lines) {
+    @return rem(step($lines)); // 8px for 1 line
+}
+
+@function rem($pxval) {
+    $base: $global-default-font-size;
+    @return ($pxval / $base) * 1rem;
+}
+
+@mixin vertical-padding($top, $bottom: $top) {
+    padding-top: vr($top);
+    padding-bottom: vr($bottom);
+}
+
+@mixin vertical-margin($top, $bottom: $top) {
+    margin-top: vr($top);
+    margin-bottom: vr($bottom);
+}
+
+@mixin center-vertically($offset: 0) {
+    position: absolute;
+    top: 50% + $offset;
+    transform: translateY(-50%);
+    perspective: 1px;
+}
+
+@mixin center($offset-v: 0, $offset-h: 0) {
+    position: absolute;
+    top: 50% + $offset-v;
+    left: 50% + $offset-h;
+    transform: translate(-50%, -50%);
+    perspective: 1px;
+}

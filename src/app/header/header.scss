@@ -1,0 +1,44 @@
+
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+.container {
+    @include span(full);
+    position: relative;
+}
+
+.image {
+    @include span(full);
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* IE 8.0 or Earlier */
+    height: 500px;
+}
+
+.wrapper {
+    @include span(full);
+    padding: step(3);
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subhead {
+    @include font(cursive1_black);
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+    padding: 20px;
+    max-width: 272px;
+    margin: auto;
+
+    @include when-wider-than(tablet) {
+        font-size: 40px;
+        max-width: 415px;
+    }
+}

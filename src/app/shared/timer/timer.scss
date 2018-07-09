@@ -1,0 +1,60 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+section {
+    background-color: $tomato;
+}
+
+.description {
+    text-align: center;
+    padding: vr(2) 0 vr(5);
+}
+
+.header {
+    @include font(philosopher1_white);
+    line-height: 45px;
+    padding: 0 step(2);
+}
+
+.subheader {
+    @include font(philosopher2_white);
+    line-height: 45px;
+    margin: vr(1) 0 vr(3);
+}
+
+.clock {
+    div {
+        display: inline-block;
+        margin: 0px 10px;
+        border-radius: 100%;
+        border: 1px solid $white;
+        width: 100px;
+        height: 100px;
+        padding-top: 25px;   
+        margin-bottom: 30px;     
+
+        @include when-wider-than(small_desktop) {
+            height: 150px;
+            width: 150px;
+            padding-top: 50px;
+        }
+    }
+
+    p {
+        @include span(full);
+        @include font(philosopher1_white);
+
+        @include when-wider-than(small_desktop) {
+            @include font(philosopher3_white);
+        }
+    }
+
+    span {
+        @include span(full);
+        font-size: 20px;
+        margin-top: vr(1);
+    }
+}

@@ -1,0 +1,46 @@
+// This file includes all base styles for website
+@import 'utils';
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%; // 16px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    color: $white;
+    font-family: 'Philosopher';
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a,
+.a {
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    background: none;
+
+    &:hover {
+        color: $hover;
+    }
+}

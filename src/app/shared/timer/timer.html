@@ -1,0 +1,26 @@
+<section class="arrow">
+    <img src="" alt="">
+</section>
+<section class="description">
+    <p class="header">We Are Waiting For...</p>
+    <p class="subheader">Precious Time</p>
+    <div class="clock">
+        <div>
+            <p>{{ days | number : '2.0-0' }}</p>
+            <span>Days</span>
+        </div>
+        <div>
+            <p>{{ hours | number : '2.0-0' }}</p>
+            <span>Hours</span>
+        </div>
+        <div>
+            <p>{{ minutes | number : '2.0-0' }}</p>
+            <span>Minutes</span>
+        </div>
+        <div>
+            <p>{{ seconds | number : '2.0-0' }}</p>
+            <span>Seconds</span>
+        </div>
+    </div>
+    <div *ngIf="isTimeArrive">That Day Arrived!!!</div>
+</section>
