@@ -5,11 +5,13 @@ import { SharedModule } from './shared/module';
 
 import { LandingComponent } from './landing/landing';
 import { HeaderComponent } from './header/header';
+import { AboutComponent } from './about/about';
 
 @NgModule({
   declarations: [
     LandingComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

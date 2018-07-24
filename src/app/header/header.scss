@@ -12,8 +12,7 @@
 
 .image {
     @include span(full);
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* IE 8.0 or Earlier */
+    object-fit: cover;
     height: 500px;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .subhead {
-    @include font(cursive1_black);
+    @include font(cursive_white);
     font-size: 30px;
     line-height: 33px;
     text-align: center;
