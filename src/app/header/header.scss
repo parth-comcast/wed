@@ -10,10 +10,13 @@
     position: relative;
 }
 
-.image {
+.first-wrapper {
     @include span(full);
-    object-fit: cover;
-    height: 500px;
+    padding: step(3);
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -39,5 +42,19 @@
     @include when-wider-than(tablet) {
         font-size: 40px;
         max-width: 415px;
+    }
+}
+
+.container {
+    background-color:$black-background;
+}
+
+.image {
+    @include span(full);
+    height: 500px;
+    object-fit: cover;
+
+    @include when-wider-than(tablet) {
+        object-fit: contain;
     }
 }

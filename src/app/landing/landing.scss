@@ -5,18 +5,7 @@
     @include span(full);
 }
 
-.nav-bar {
-    height: vr(7);
-    background-color: $white;
-    position: relative;
-}
-
-.name {
-    @include center-vertically();
-    max-width: step(27);
-}
-
-.image {
+app-nav {
     @include span(full);
 }
 

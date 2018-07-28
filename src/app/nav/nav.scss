@@ -1,0 +1,30 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+.nav-bar {
+    position: relative;
+    height: vr(7);
+    background-color: $white;
+
+    @include when-wider-than(tablet) {
+        height: vr(10);
+        max-width: step(46);
+    }
+
+    @include when-wider-than(small_desktop) {
+        height: vr(14);
+        margin: auto;
+    }
+}
+
+.name {
+    @include center-vertically();
+    max-width: step(27);
+
+    @include when-wider-than(tablet) {
+        max-width: step(46);
+    }
+}
