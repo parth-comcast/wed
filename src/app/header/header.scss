@@ -12,10 +12,9 @@
 
 .wrapper {
     @include span(full);
-    position: absolute;
+    @include hack-center();
     top: 46%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .subhead {
@@ -54,15 +53,14 @@
 
 .logo {
     @include span(full);
+    @include hack-center();
     max-width: 464px;
-    position: absolute;
     top: 24%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #chevron {
-    position: absolute;
+    @include hack-center();
     text-align: center;
     padding: 12px;
     margin-bottom: 6px;
@@ -71,7 +69,6 @@
     padding: step(3);
     top: 77%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
   
   #chevron:before {
@@ -105,20 +102,28 @@
   }
 
   .save-date {
-    position: absolute;
+    @include hack-center();
     top: 65%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .date {
-    position: absolute;
+    @include hack-center();
     top: 77%;
     left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 22px;
 
     @include when-wider-than(tablet) {
         font-size: 24px;
     }
   }
+
+.circle {
+    @include hack-center();
+    top: 101%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: $tomato;
+    border-radius: 50%;
+}
