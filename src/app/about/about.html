@@ -1,1 +1,16 @@
-<h1 id="top">About me!!!</h1>
+<section id="top">
+    <div class="header-wrapper">
+        <h2 class="header">Groom and bride</h2>
+        <img src="../assets/heading.png" alt="" class="image">
+    </div>
+    <div class="wrapper" *ngFor="let info of info">
+        <div class="groom-wrapper">
+            <img src="{{info.image}}" alt="" class="groom-image hover">
+        </div>
+        <div class="groom-right-wrapper">
+            <p class="groom-header">{{info.title}}</p>
+            <p class="groom-description">{{info.description}}</p>
+            <p class="name">{{info.name}}</p>
+        </div>
+    </div>
+</section>

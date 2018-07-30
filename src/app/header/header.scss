@@ -54,7 +54,7 @@
 .logo {
     @include span(full);
     @include hack-center();
-    max-width: 464px;
+    max-width: 600px;
     top: 24%;
     left: 50%;
 }

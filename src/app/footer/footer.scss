@@ -1,0 +1,15 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+section {
+    height: 200px;
+    background: $white;
+}
+
+h1 {
+    @include font(cursive1_black);
+}
+

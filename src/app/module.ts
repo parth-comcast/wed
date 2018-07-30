@@ -6,6 +6,7 @@ import { SharedModule } from './shared/module';
 import { LandingComponent } from './landing/landing';
 import { NavComponent } from './nav/nav';
 import { HeaderComponent } from './header/header';
+import { FooterComponent } from './footer/footer';
 import { AboutComponent } from './about/about';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { AboutComponent } from './about/about';
     LandingComponent,
     NavComponent,
     HeaderComponent,
+    FooterComponent,
     AboutComponent
   ],
   imports: [

@@ -3,3 +3,115 @@
 :host {
     @include span(full);
 }
+
+section {
+@include span(full);
+background-color:$white;
+padding: vr(5) 0;
+
+    @include when-wider-than(small_desktop) {
+        padding-left: step(7);
+        padding-right: step(7);
+    }
+}
+
+.header-wrapper {
+    @include span(full);
+    text-align: center;
+    margin-bottom: vr(4);
+}
+
+.wrapper {
+    @include span(full);
+    background-color: $grey-8;
+    padding: 0 step(3) vr(3);
+    margin-bottom: vr(2);
+
+    @include when-wider-than(small_desktop) {
+        padding-bottom: 0;
+    }
+}
+
+.header {
+    @include span(full);
+    @include font(cursive1_black);
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin-bottom: vr(1.5);
+}
+
+.groom-wrapper {
+    @include span(full);
+    position: relative;
+    padding: vr(3) 0;
+    text-align: center;
+
+    @include when-wider-than(small_desktop) {
+        @include span(4);
+    }
+
+    @include when-wider-than(large_desktop) {
+        @include span(3);
+    }
+}
+
+.wrapper:nth-of-type(odd) {
+    .groom-wrapper {
+        float: right;
+    }
+
+    .groom-right-wrapper {
+        @include when-wider-than(small_desktop) {
+            text-align: right;
+        }
+    }
+}
+
+.groom-right-wrapper {
+    @include span(full);
+    text-align: center;
+
+    @include when-wider-than(small_desktop) {
+        @include span(8);
+        padding: step(2);
+        text-align: left;
+    }
+
+    @include when-wider-than(large_desktop) {
+        @include span(9);
+    }
+}
+
+.groom-header {
+    @include font(philosopher2_black);
+    text-transform: capitalize;
+    margin: vr(2) 0;
+
+    @include when-wider-than(small_desktop) {
+        margin: vr(9) 0 vr(2);
+    }
+}
+
+.groom-description {
+    @include font(display4_grey);
+    padding: 0 step(4);
+
+    @include when-wider-than(small_desktop) {
+        padding: 0;
+    }
+}
+
+.groom-image {
+    width: step(33);
+}
+
+.groom-image:hover {
+    border: 3px solid $tomato;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.name {
+    @include font(cursive_tomato);
+    padding-top: vr(3);
+}
