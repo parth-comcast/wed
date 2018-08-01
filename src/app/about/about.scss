@@ -105,10 +105,12 @@ padding: vr(5) 0;
     width: step(33);
 }
 
-.groom-image:hover {
-    border: 3px solid $tomato;
-    border-radius: 100%;
-    cursor: pointer;
+.wrapper:hover {
+    .groom-image {
+        border: 3px solid $tomato;
+        border-radius: 100%;
+        cursor: pointer;
+    }
 }
 
 .name {

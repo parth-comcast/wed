@@ -5,11 +5,43 @@
 }
 
 section {
-    height: 200px;
-    background: $white;
+    background: $black;
+    text-align: center;
+    padding: 50px 20px;
+    // background-image: url("../../assets/footer-background.jpg");
+    // background-repeat: no-repeat;
+    // background-size: 34% 100%;
+
+    @include when-wider-than(tablet) {
+        padding: 50px;
+    }
 }
 
-h1 {
-    @include font(cursive1_black);
+.image {
+    max-width: 250px;
+
+    @include when-wider-than(tablet) {
+        max-width: 400px;
+    }
+}
+
+p {
+    @include font(cursive_white);
+    font-size: vr(5);
+    line-height: 1;
+    padding-bottom: vr(1);
+
+    @include when-wider-than(small_desktop) {
+        font-size: vr(7);
+    }
+}
+
+.foot {
+    padding-bottom: vr(2);
+}
+
+.copyright {
+    @include font(body1_grey);
+    padding-top: vr(4);
 }
 
