@@ -46,7 +46,7 @@
     height: 500px;
     object-fit: cover;
 
-    @include when-wider-than(tablet) {
+    @include when-wider-than(small_desktop) {
         object-fit: contain;
     }
 }

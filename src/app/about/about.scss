@@ -7,7 +7,7 @@
 section {
 @include span(full);
 background-color:$white;
-padding: vr(5) 0;
+padding: vr(5) 0 vr(3);
 
     @include when-wider-than(small_desktop) {
         padding-left: step(7);
@@ -86,6 +86,7 @@ padding: vr(5) 0;
     @include font(philosopher2_black);
     text-transform: capitalize;
     margin: vr(2) 0;
+    line-height: 1;
 
     @include when-wider-than(small_desktop) {
         margin: vr(9) 0 vr(2);

@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing';
 import { NavComponent } from './nav/nav';
 import { HeaderComponent } from './header/header';
 import { FooterComponent } from './footer/footer';
+import { StoryComponent } from './story/story';
 import { AboutComponent } from './about/about';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AboutComponent } from './about/about';
     NavComponent,
     HeaderComponent,
     FooterComponent,
+    StoryComponent,
     AboutComponent
   ],
   imports: [
