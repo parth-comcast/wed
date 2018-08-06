@@ -24,8 +24,4 @@ export class AboutComponent implements OnInit {
       }
     ];
   }
-
-  public ngAfterViewInit(): void {
-    console.log("Hi....");
-  }
 }

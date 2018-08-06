@@ -1,0 +1,47 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+.wrapper {
+    @include span(full);
+    text-align: center;
+    background: $grey-8;    
+}
+
+.header-wrapper {
+    @include span(full);
+    text-align: center;
+    margin-bottom: vr(4);
+}
+
+.header {
+    @include span(full);
+    @include font(cursive1_black);
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin-bottom: vr(1.5);
+}
+
+.mobile {
+    @include span(full);
+    padding: vr(2) 0;
+}
+
+.date,
+.summary {
+    @include font(philosopher1_tomato);
+}
+
+.title {
+    @include font(cursive1_black);
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: vr(2);
+}
+
+.description {
+    @include font(display4_grey);
+    padding: vr(2);
+}
