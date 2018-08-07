@@ -84,6 +84,7 @@ padding: vr(5) 0;
 
 .groom-header {
     @include font(philosopher2_black);
+    line-height: 1;
     text-transform: capitalize;
     margin: vr(2) 0;
 

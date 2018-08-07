@@ -7,6 +7,17 @@
 
 app-nav {
     @include span(full);
+    background-color: $white;
+    position: fixed;
+    z-index: 10;
+}
+
+app-header {
+    @include span(full);
+
+    @include when-wider-than(tablet) {
+        padding-top: vr(20);
+    }
 }
 
 app-timer {

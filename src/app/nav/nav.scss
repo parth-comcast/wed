@@ -5,26 +5,64 @@
 }
 
 .nav-bar {
-    position: relative;
-    height: vr(7);
-    background-color: $white;
+    @include span(full);
+    text-align: left;
 
     @include when-wider-than(tablet) {
-        height: vr(10);
-        max-width: step(46);
+        text-align: center;
     }
+}
 
-    @include when-wider-than(small_desktop) {
-        height: vr(14);
-        margin: auto;
+.image-wrapper {
+    @include span(full);
+
+    @include when-wider-than(tablet) {
+        border-bottom: 1px solid $grey-light;
     }
 }
 
 .name {
-    @include center-vertically();
-    max-width: step(27);
+    width: step(27);
+    padding: vr(1) 0;
 
     @include when-wider-than(tablet) {
-        max-width: step(46);
+        width: step(46);
     }
+}
+
+.fa-bars {
+    @include center-vertically();
+    right: 0;
+    font-size: step(4);
+    color: $tomato;
+    padding-right: step(1);
+
+    @include when-wider-than(tablet) {
+        display: none;
+    }
+}
+
+.link-label {
+    display: none;
+
+    @include when-wider-than(tablet) {
+        @include span(full);
+        padding: vr(2) 0;
+        display: block;
+    }
+}
+
+li {
+    display: inline-block;
+    padding: vr(1) step(2);
+
+    a {
+        &:hover {
+            color: $tomato;
+        }
+    }
+}
+
+button {
+    @include font(philosopher1_black);
 }

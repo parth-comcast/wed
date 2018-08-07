@@ -1,3 +1,13 @@
 <div class="nav-bar">
-    <img src="../assets/Name_Black.png" alt="" class="name">
+    <div class="image-wrapper">
+        <img src="../assets/Name_Black.png" alt="" class="name">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="link-label">
+        <ul>
+            <li *ngFor="let item of links">
+                <button class="a">{{ item.label }}</button>
+            </li>
+        </ul>
+    </div>
 </div>

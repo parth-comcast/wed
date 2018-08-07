@@ -46,7 +46,7 @@
     height: 500px;
     object-fit: cover;
 
-    @include when-wider-than(tablet) {
+    @include when-wider-than(small_desktop) {
         object-fit: contain;
     }
 }
@@ -126,4 +126,12 @@
     width: 80px;
     background-color: $tomato;
     border-radius: 50%;
+}
+
+.fas {
+    @include hack-center();
+    font-size: step(3);
+    color: $white;
+    top: 98%;
+    left: 50%;
 }
