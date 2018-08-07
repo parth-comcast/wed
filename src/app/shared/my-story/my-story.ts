@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MyStoryComponent implements OnInit {
 
     @Input() position: boolean;
-    @Input() storyData: object;
+    @Input() storyData: object[];
+
   
     public ngOnInit(): void {
         console.log(this.position, this.storyData);

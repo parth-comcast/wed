@@ -7,6 +7,7 @@
 .wrapper {
     @include span(full);
     text-align: center;
+    padding-top: vr(3);
     background: $grey-8;    
 }
 
@@ -24,9 +25,19 @@
     margin-bottom: vr(1.5);
 }
 
+.image-wrapper {
+    @include when-wider-than(tablet) {
+        float: left;
+    }
+}
+
+.image {
+    max-width: 15%;
+}
+
 .mobile {
     @include span(full);
-    padding: vr(2) 0;
+    padding: vr(2) 0 0;
 }
 
 .date,
