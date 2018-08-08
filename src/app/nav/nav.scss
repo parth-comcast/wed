@@ -57,12 +57,34 @@ li {
     padding: vr(1) step(2);
 
     a {
+        @include font(philosopher1_black);
+
         &:hover {
             color: $tomato;
         }
     }
 }
 
-button {
-    @include font(philosopher1_black);
+.mobile-pages {
+    position: fixed;
+    top: 80px;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    background-color: $white;
+    height: calc(100% - 80px);
+    transition: all 0.5s linear;
+
+    li {
+        padding: vr(1) step(4);
+        list-style: none;
+
+        .a {
+            @include font(philosopher1_black);
+        }
+    }
+}
+
+.pages-visible {
+    height: 0%;
 }

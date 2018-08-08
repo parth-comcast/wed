@@ -1,13 +1,31 @@
 <div class="nav-bar">
     <div class="image-wrapper">
         <img src="../assets/Name_Black.png" alt="" class="name">
-        <i class="fas fa-bars"></i>
+        <i (click)="toggleMobileNav()" class="fas fa-bars"></i>
+    </div>
+    <div class="mobile-pages" [ngClass]="{ 'pages-visible': isMobileNavOpen }">
+        <ul>
+            <li *ngFor="let item of links">
+                <a class="a">{{ item.label }}</a>
+            </li>
+        </ul>
     </div>
     <div class="link-label">
         <ul>
             <li *ngFor="let item of links">
-                <button class="a">{{ item.label }}</button>
+                <a class="a">{{ item.label }}</a>
             </li>
         </ul>
     </div>
 </div>
+
+<!-- <div class="hamburger">
+    <i (click)="toggleMobileNav()" class="fa fa-bars"></i>
+</div>
+<div class="mobile-pages" [ngClass]="{ 'pages-visible': isMobileNavOpen }">
+    <ul>
+        <li [ngClass]="{'active': isActive(item.link)}" *ngFor="let item of links">
+            <button class="a" (click)="goToPage(item.link)">{{ item.label }}</button>
+        </li>
+    </ul>
+</div> -->

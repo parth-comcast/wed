@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { WindowReference } from './core/window';
+
 import { SharedModule } from './shared/module';
 
 import { LandingComponent } from './landing/landing';
@@ -21,7 +23,9 @@ import { AboutComponent } from './about/about';
     BrowserModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    WindowReference
+  ],
   bootstrap: [LandingComponent]
 })
 export class AppModule { }
