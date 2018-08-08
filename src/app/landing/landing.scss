@@ -14,6 +14,7 @@ app-nav {
 
 app-header {
     @include span(full);
+    padding-top: vr(13);
 
     @include when-wider-than(tablet) {
         padding-top: vr(20);

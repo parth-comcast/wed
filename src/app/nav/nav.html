@@ -1,12 +1,11 @@
 <div class="nav-bar">
     <div class="image-wrapper">
         <img src="../assets/Name_Black.png" alt="" class="name">
-        <i class="fas fa-bars"></i>
     </div>
     <div class="link-label">
         <ul>
             <li *ngFor="let item of links">
-                <button class="a">{{ item.label }}</button>
+                <a class="a">{{ item.label }}</a>
             </li>
         </ul>
     </div>
