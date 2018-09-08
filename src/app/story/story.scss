@@ -1,0 +1,97 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+section {
+  @include span(full);
+}
+
+.header-wrapper {
+  @include span(full);
+  text-align: center;
+  margin-bottom: vr(4);
+}
+
+.header {
+  @include span(full);
+  @include font(cursive1_black);
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin-bottom: vr(1.5);
+}
+
+.left-wrapper {
+  @include span(full);
+  padding: vr(2) step(1);
+  background: $grey-8;
+  text-align: center;
+  margin-bottom: vr(2);
+
+  @include when-wider-than(small_desktop) {
+    @include span(8);
+  }
+}
+
+.left-wrapper:nth-of-type(odd) {
+      float: right;
+
+      .image-wrapper {
+        float: right;
+      }
+
+      .text-wrapper {
+        text-align: right;
+        padding-right: step(3);
+      }
+  }
+
+.image-wrapper {
+  @include span(full);
+
+  @include when-wider-than(tablet) {
+    @include span(4);
+  }
+}
+
+.text-wrapper {
+  @include span(full);
+
+  @include when-wider-than(tablet) {
+    @include span(8);
+    padding-left: step(3);
+    text-align: left;
+  }
+}
+
+.date,
+.summary {
+  @include font(philosopher1_tomato);
+}
+
+.title {
+  @include font(cursive1_black);
+  font-size: 30px;
+  text-transform: capitalize;
+  padding: vr(2);
+
+  @include when-wider-than(tablet) {
+    padding: vr(2) 0;
+  }
+}
+
+.description {
+  @include font(display4_grey);
+  padding: vr(2);
+
+  @include when-wider-than(tablet) {
+    padding: vr(2) 0;
+  }
+}
+
+.story-image {
+    width: 200px;
+    height: 200px;
+    border: 3px solid $tomato;
+}

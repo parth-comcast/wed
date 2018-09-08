@@ -5,14 +5,9 @@
 }
 
 section {
-@include span(full);
-background-color:$white;
-padding: vr(5) 0;
-
-    @include when-wider-than(small_desktop) {
-        padding-left: step(7);
-        padding-right: step(7);
-    }
+    @include span(full);
+    background-color:$white;
+    padding: vr(5) 0;
 }
 
 .header-wrapper {

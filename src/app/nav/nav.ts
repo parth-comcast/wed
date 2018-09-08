@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SimpleSmoothScrollService } from 'ng2-simple-smooth-scroll';
+import { SimpleSmoothScrollOption } from 'ng2-simple-smooth-scroll';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  public links = [
+    public links = [
     {
         label: 'Home',
         link: 'home'
@@ -26,5 +28,14 @@ export class NavComponent implements OnInit {
     }
 ];
 
-  public ngOnInit(): void { }
+    
+    constructor(private smooth: SimpleSmoothScrollService) {}
+
+    public ngOnInit(): void {
+        // this.smooth.smoothScrollToAnchor();
+    }
+
+    public generateLink(link): string {
+        return '#' + link;
+    }
 }

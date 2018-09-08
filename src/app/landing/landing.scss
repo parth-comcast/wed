@@ -21,12 +21,24 @@ app-header {
     }
 }
 
+app-story {
+    @include span(full);
+    
+    @include when-wider-than(small_desktop) {
+        @include pad(0.5);
+    }
+}
+
 app-timer {
     @include span(full);
 }
 
 app-about {
     @include span(full);
+
+    @include when-wider-than(small_desktop) {
+        @include pad(0.5);
+    }
 }
 
 app-footer {

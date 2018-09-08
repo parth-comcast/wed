@@ -1,11 +1,11 @@
-<div class="nav-bar">
+<div class="nav-bar" id="home">
     <div class="image-wrapper">
         <img src="../assets/Name_Black.png" alt="" class="name">
     </div>
     <div class="link-label">
         <ul>
             <li *ngFor="let item of links">
-                <a class="a">{{ item.label }}</a>
+                <a class="a" SimpleSmoothScroll [scrollTo]="item.link" [duration]="800">{{ item.label }}</a>
             </li>
         </ul>
     </div>
