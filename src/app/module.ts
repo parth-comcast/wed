@@ -9,6 +9,7 @@ import { LandingComponent } from './landing/landing';
 import { NavComponent } from './nav/nav';
 import { HeaderComponent } from './header/header';
 import { StoryComponent } from './story/story';
+import { VenueComponent } from './venue/venue';
 import { FooterComponent } from './footer/footer';
 import { AboutComponent } from './about/about';
 
@@ -18,6 +19,7 @@ import { AboutComponent } from './about/about';
     NavComponent,
     HeaderComponent,
     StoryComponent,
+    VenueComponent,
     FooterComponent,
     AboutComponent
   ],
