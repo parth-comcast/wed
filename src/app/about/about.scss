@@ -27,6 +27,10 @@ section {
     }
 }
 
+.wrapper:last-child {
+    margin-bottom: 0;
+}
+
 .header {
     @include span(full);
     @include font(cursive1_black);

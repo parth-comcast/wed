@@ -1,0 +1,46 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+    background-color: white;
+}
+
+section {
+  @include span(full);
+  height: 400px;
+  background-color: black;
+  text-align: center;
+  padding: vr(5) step(2);
+}
+
+.inner-box {
+    @include span(full);
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: vr(6) step(3);
+}
+
+.line {
+    border-top: 15px solid $tomato;
+}
+
+.heading {
+    @include font(cursive_white);
+    font-size: 30px;
+
+    @include when-wider-than(tablet) {
+        font-size: 52px;
+    }
+}
+
+.description {
+    @include font(cursive_tomato);
+    font-size: 40px;
+    line-height: 1.1;
+    padding-top: vr(5);
+}
+
+.description-time {
+    
+}
+
+

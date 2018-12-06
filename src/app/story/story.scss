@@ -6,6 +6,7 @@
 
 section {
   @include span(full);
+  padding: 0 0 vr(5);
 }
 
 .header-wrapper {
