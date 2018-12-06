@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header';
 import { StoryComponent } from './story/story';
 import { VenueComponent } from './venue/venue';
 import { FooterComponent } from './footer/footer';
+import { GalleryComponent } from './gallery/gallery';
 import { AboutComponent } from './about/about';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { AboutComponent } from './about/about';
     StoryComponent,
     VenueComponent,
     FooterComponent,
+    GalleryComponent,
     AboutComponent
   ],
   imports: [

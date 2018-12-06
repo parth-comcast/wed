@@ -6,17 +6,29 @@
 }
 
 section {
-  @include span(full);
-  height: 400px;
-  background-color: black;
-  text-align: center;
-  padding: vr(5) step(2);
+    @include span(full);
+      background-color: black;
+//     background-image: url("../../assets/fashion-man-couple.jpg");
+//     height: 500px; /* You must set a specified height */
+//   background-position: center; /* Center the image */
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   background-size: cover; /* Resize the background image to cover the entire container */
+    text-align: center;
+    padding: vr(5) step(2);
 }
 
 .inner-box {
-    @include span(full);
+    width: span(full);
+    float: left;
     background-color: rgba(255, 255, 255, 0.11);
     padding: vr(6) step(3);
+    border-top: 10px solid $tomato;
+
+    @include when-wider-than(tablet) {
+        width: 600px;
+        margin: auto;
+        float: none;
+    }
 }
 
 .line {
@@ -25,7 +37,10 @@ section {
 
 .heading {
     @include font(cursive_white);
-    font-size: 30px;
+    font-size: 44px;
+    line-height: 1;
+    padding-bottom: vr(5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     @include when-wider-than(tablet) {
         font-size: 52px;
@@ -39,8 +54,21 @@ section {
     padding-top: vr(5);
 }
 
-.description-time {
-    
+.time {
+    @include font(philosopher1_tomato);
+    font-size: 26px;
+    padding: vr(1.5) 0 vr(5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.map-icon {
+    padding-top: vr(5);
+    font-size: 30px;
+}
+
+.location {
+    @include font(philosopher1_white);
+    font-size: 26px;
+    padding-top: vr(1);
+}
 
