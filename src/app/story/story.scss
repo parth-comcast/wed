@@ -6,7 +6,7 @@
 
 section {
   @include span(full);
-  padding: 0 0 vr(5);
+  padding: 0;
 }
 
 .header-wrapper {
@@ -36,6 +36,8 @@ section {
 }
 
 .left-wrapper:nth-of-type(odd) {
+
+  @include when-wider-than(small_desktop) {
       float: right;
 
       .image-wrapper {
@@ -46,6 +48,8 @@ section {
         text-align: right;
         padding-right: step(3);
       }
+    }
+
   }
 
 .image-wrapper {

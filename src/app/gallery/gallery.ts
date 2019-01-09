@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './gallery.html',
   styleUrls: ['./gallery.scss']
 })
-export class GalleryComponent { }
+export class GalleryComponent {
+  public imageSources = [ '../assets/IMG_9808.jpg', '../assets/IMG_9897.jpg'];
+}

@@ -12,13 +12,13 @@ export class AboutComponent implements OnInit {
     this.info = [
       {
         'title': 'About the groom',
-        'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, vel. Odio, ex ut veritatis reprehenderit in facilis nobis! Ratione eos sint eligendi exercitationem consequatur, distinctio molestias minima, assumenda nulla autem !',
+        'description': 'I am a person Who is positive about every aspect of my life .I like to sleep early and to get up late. I think 5 years down the life I should be happily settled with my kids and a lovely soul mate with all the blessings of God.I have a Very special bond with My wife 😘...',
         "image": '../assets/p1.jpg',
         'name': '~ Parth'
       },
       {
       'title': 'About the bride',
-      'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, vel. Odio, ex ut veritatis reprehenderit in facilis nobis! Ratione eos sint eligendi exercitationem consequatur, distinctio molestias minima, assumenda nulla autem !',
+      'description': 'I am soft spoken, God fearing, caring, talented, understanding, trustworthy and kind hearted human being. I believe in the motto \'LIVE AND LET LIVE\'.I like to see the moon light at night with my lovely hubby.. 😘❤...',
       "image": '../assets/s2.jpg',
       'name': '~ Smita'
       }

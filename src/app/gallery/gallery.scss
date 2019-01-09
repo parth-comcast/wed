@@ -1,0 +1,29 @@
+@import 'utils';
+
+:host {
+    @include span(full);
+}
+
+section {
+  @include span(full);
+  padding: vr(5) 0 0;
+}
+
+.header-wrapper {
+  @include span(full);
+  text-align: center;
+  margin-bottom: vr(4);
+}
+
+.header {
+  @include span(full);
+  @include font(cursive1_black);
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin-bottom: vr(1.5);
+}
+
+slideshow {
+    @include span(full);
+    padding-bottom: vr(5);
+}
