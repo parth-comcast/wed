@@ -20,14 +20,14 @@ export class StoryComponent {
       'summary': 'THAT WAS SO WONDERFUL',
       'description': 'Time stopped when we first met, I saw an angel walking by me and I cannot even breathe.I remember how you smiled at me when we first met, and everything just fell into their place.',
       "image": '../assets/first.jpg',
-      'date': '23 DECEMBER 2017'
+      'date': '3 DECEMBER 2017'
     },
     {
       'title': 'Our First Hug',
       'summary': 'FEELING AWESOME :)',
       'description': 'One day he hug me so tight that all of my broken pieces stick back together and forever',
       "image": '../assets/hug.jpg',
-      'date': '23 DECEMBER 2017'
+      'date': '3 DECEMBER 2017'
     },
   ];
 }

@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { SimpleSmoothScrollService } from 'ng2-simple-smooth-scroll';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.html',
   styleUrls: ['./nav.scss']
 })
-export class NavComponent implements OnInit {
+export class NavComponent {
 
     public links = [
         {
@@ -26,12 +25,6 @@ export class NavComponent implements OnInit {
             link: 'gallery'
         }
     ];
-    
-    constructor(private smooth: SimpleSmoothScrollService) {}
-
-    public ngOnInit(): void {
-        this.smooth.smoothScrollToAnchor();
-    }
 
     public generateLink(link): string {
         return '#' + link;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { SharedModule } from './shared/module';
 
@@ -27,7 +27,7 @@ import { AboutComponent } from './about/about';
   ],
   imports: [
     BrowserModule,
-    SimpleSmoothScrollModule,
+    ScrollToModule.forRoot(),
     SharedModule
   ],
   providers: [],
