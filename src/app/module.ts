@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { SharedModule } from './shared/module';
 
@@ -28,7 +29,8 @@ import { AboutComponent } from './about/about';
   imports: [
     BrowserModule,
     ScrollToModule.forRoot(),
-    SharedModule
+    SharedModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [LandingComponent]
