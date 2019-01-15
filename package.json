@@ -26,6 +26,7 @@
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
     "jQuery": "^1.7.4",
+    "ng-simple-slideshow": "^1.2.6",
     "ng2-simple-smooth-scroll": "^0.2.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"

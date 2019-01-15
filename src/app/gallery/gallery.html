@@ -1,6 +1,17 @@
 <section id="gallery">
     <div class="header-wrapper">
         <h2 class="header">Gallery</h2>
-        <img src="../assets/heading.png" alt="" class="image">
+        <img src="../../assets/icons/heading.png" alt="" class="image">
     </div>
+    <slideshow
+      [imageUrls]="imageSlides"
+      [autoPlay]="true"
+      [minHeight]="'300px'"
+      [backgroundSize]="'contain'"
+      [backgroundPosition]="'center center'"
+      [stopAutoPlayOnSlide]="true"
+      [backgroundRepeat]="'no-repeat'"
+      [arrowSize]="'40px'"
+      [autoPlayWaitForLazyLoad]="true">
+    </slideshow>
 </section>

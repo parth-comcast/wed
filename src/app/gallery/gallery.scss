@@ -25,5 +25,14 @@ section {
 
 slideshow {
     @include span(full);
-    padding-bottom: vr(5);
+    margin-bottom: vr(5);
+    height: vr(43);
+
+    @include when-wider-than(tablet) {
+        height: vr(56);
+    }
+
+    @include when-wider-than(small_desktop) {
+        height: vr(65);
+    }
 }
